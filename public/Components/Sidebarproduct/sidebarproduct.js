@@ -39,7 +39,7 @@ class Sidebarproduct extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <link rel="stylesheet" href="/public/Components/Sidebarproduct/sidebarproduct.css">
+      <link rel="stylesheet" href="./public/Components/Sidebarproduct/sidebarproduct.css">
       <div class="container-fluid">
         <div class="row">
           <!-- Sidebar -->
