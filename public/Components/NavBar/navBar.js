@@ -3,15 +3,16 @@ class NavBar extends HTMLElement {
       super();
       this.pages = [
         {
-          url: '/landing.html',
+          url: 'https://andreita7128.github.io/Pag-Banco-W/landing.html',
           title: 'Inicio'
         },
         {
-          url: './CDT/CDT.html',
+          url: 'https://andreita7128.github.io/Pag-Banco-W/CDT/CDT.html',
           title: 'CDT'
         },
+        
         {
-          url: './Creditos/credito.html',
+          url: 'https://andreita7128.github.io/Pag-Banco-W/Creditos/credito.html',
           title: 'Microcrédito'
         },
         {
@@ -28,7 +29,7 @@ class NavBar extends HTMLElement {
     connectedCallback() {
       this.render();
       this.setupSearchForm();
-      this.setupCreditRedirect();
+    
       this.hideDropdownMenu();
       const dropdownToggle = this.querySelector('.redirect-unique');
       const dropdownMenu = dropdownToggle.nextElementSibling;
@@ -82,7 +83,7 @@ class NavBar extends HTMLElement {
                     <img class="logo1" src="https://andreita7128.github.io/Pag-Banco-W/public/Components/NavBar/images/logo-banco.png" alt="Logo de mi sitio web">
                 </a>
             <div class="d-flex justify-content-center align-items-center">
-                <form id = 'search-1' class="d-flex my-2 my-lg-0">
+                <form id = 'search-1' class="d-flex my-2 my-lg-0 search-form">
                     <input class="form-control me-2 placeholder-input-desk headline5" type="search"
                     placeholder="¿Que estas buscando?" aria-label="Search">
                 <button class="btn btn_large_active search_button_desk " type="submit"><i class="bi bi-search"></i></button>
@@ -247,28 +248,32 @@ class NavBar extends HTMLElement {
     setupSearchForm() {
       const searchForms = this.querySelectorAll('form.search-form');
       searchForms.forEach((searchForm) => {
-        searchForm.addEventListener('submit', this.handleSearchSubmit.bind(this));
+        searchForm.addEventListener('submit', this.handleSearchSubmit.bind(this, searchForm));
       });
     }
-  
-    handleSearchSubmit(event) {
+    
+    handleSearchSubmit(event, searchForm) {
       event.preventDefault();
-      const searchInput = event.target.querySelector('input[type="search"]');
+      const searchInput = searchForm.querySelector('input[type="search"]');
       const searchTerm = searchInput.value.trim();
-  
+    
       if (searchTerm !== '') {
         const searchResults = this.pages.filter(page =>
           page.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
-  
+    
         if (searchResults.length > 0) {
           const firstResult = searchResults[0];
-          window.location.href = firstResult.url;
+          let url = new URL(firstResult.url);
+          url.search = new URLSearchParams({ q: searchTerm }).toString();
+          window.location.href = url.href;
         } else {
           console.log('No se encontró la búsqueda');
         }
       }
     }
+    
+    
   
  
   }
