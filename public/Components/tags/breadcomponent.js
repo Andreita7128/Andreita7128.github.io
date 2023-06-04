@@ -45,7 +45,7 @@ class BreadComponent extends HTMLElement {
 
     render() {
         this.innerHTML = `
-            <link rel="stylesheet" href="../../../public/Components/tags/tags.css">
+            <link rel="stylesheet" href="/Pag-Banco-W/public/Components/tags/tags.css">
             <div id="breadcrumb-title-section">
                 <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
                     <ol id="breadcrumb">
