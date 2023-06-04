@@ -10,20 +10,20 @@ class NavBar extends HTMLElement {
           url: 'https://andreita7128.github.io/Pag-Banco-W/CDT/CDT.html',
           title: 'CDT'
         },
-        
         {
           url: 'https://andreita7128.github.io/Pag-Banco-W/Creditos/credito.html',
           title: 'Microcrédito'
         },
         {
-          url: '/landing.html',
+          url: 'https://andreita7128.github.io/Pag-Banco-W/landing.html',
           title: 'Inicio'
         },
         {
-          url: '/landing.html',
+          url: 'https://andreita7128.github.io/Pag-Banco-W/landing.html',
           title: 'Inicio'
         }
       ];
+      
     }
   
     connectedCallback() {
@@ -246,32 +246,32 @@ class NavBar extends HTMLElement {
     }
   
     setupSearchForm() {
-      const searchForms = this.querySelectorAll('form.search-form');
-      searchForms.forEach((searchForm) => {
-        searchForm.addEventListener('submit', this.handleSearchSubmit.bind(this, searchForm));
-      });
-    }
-    
-    handleSearchSubmit(event, searchForm) {
-      event.preventDefault();
-      const searchInput = searchForm.querySelector('input[type="search"]');
-      const searchTerm = searchInput.value.trim();
-    
-      if (searchTerm !== '') {
-        const searchResults = this.pages.filter(page =>
-          page.title.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-    
-        if (searchResults.length > 0) {
-          const firstResult = searchResults[0];
-          let url = new URL(firstResult.url);
-          url.search = new URLSearchParams({ q: searchTerm }).toString();
-          window.location.href = url.href;
-        } else {
-          console.log('No se encontró la búsqueda');
-        }
+      const searchForm1 = this.querySelector('#search-1');
+      const searchForm2 = this.querySelector('#search-2');
+      searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
+      searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
+
+  }
+  handleSearchSubmit(event) {
+    event.preventDefault();
+    const searchInput = this.querySelector('input[type="search"]');
+    const searchTerm = searchInput.value;
+  
+    if (searchTerm.trim() !== '') {
+      const searchResults = this.pages.filter((page) =>
+        page.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      if (searchResults.length > 0) {
+        const firstResult = searchResults[0];
+        window.location.href = firstResult.url;
+      } else {
+        console.log('No se encontró la búsqueda');
       }
     }
+  }
+  
+  
+    
     
     
   
