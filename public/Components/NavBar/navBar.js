@@ -106,7 +106,7 @@ class NavBar extends HTMLElement {
         <nav class="navbar navbar-expand-lg navbar-dark  second_nav fixed-top">
             <div class="container-fluid mx-auto background_responsive_navbar">
                 <a class="navbar-brand d-md-none" href="#">
-                <img class="logo1" src="./public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
+                <img class="logo1" src="/Pag-Banco-W/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
                 </a>
     
             <button class="navbar-toggler ms-auto button_toggler" type="button" data-bs-toggle="collapse"
@@ -122,7 +122,7 @@ class NavBar extends HTMLElement {
                 </form>
                 <li class="nav-item d-md-none d-block">
                 <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
-                href="Registro/iniciarSesión.html">Mi perfil W</a>
+                href="/Pag-Banco-W/Registro/iniciarSesión.html">Mi perfil W</a>
             </li>
             <li class="nav-item d-md-none d-block">
                 <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"
@@ -139,7 +139,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle nav-link-pressed  " href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Ahorro e inversión </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="CDT/CDT.html">CDT</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/CDT/CDT.html">CDT</a>
                             <a class="dropdown-item" href="#">Cuenta de ahorro</a>
                             <a class="dropdown-item" href="#">Deposito de bajo monto</a>
                             <a class="dropdown-item" href="#">Ahorranza</a>
@@ -152,11 +152,11 @@ class NavBar extends HTMLElement {
 
 
                     <li class="nav-item dropdown border-bottom-gg">
-                        <a class="nav-link dropdown-toggle nav-link-pressed redirect-unique" href="Creditos/all-credits.html" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle nav-link-pressed redirect-unique" href="/Pag-Banco-W/Creditos/all-credits.html" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Creditos/All/all-credits.html">Todos</a>
-                            <a class="dropdown-item" href="Creditos/credito.html">Microcredito</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/Creditos/All/all-credits.html">Todos</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/Creditos/credito.html">Microcredito</a>
                             <a class="dropdown-item" href="#">Yo construyo</a>
                             <a class="dropdown-item" href="#">Gotahorro</a>
                             <a class="dropdown-item" href="#">Inmueble productivo</a>
@@ -171,7 +171,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Seguros </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/eguros/soy-vida.html">Seguro soy vida</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/seguros/soy-vida.html">Seguro soy vida</a>
                             <a class="dropdown-item" href="#">Seguro soy protección familiar</a>
                             <a class="dropdown-item" href="#">Seguro soy patrimonio seguro</a>
                             <a class="dropdown-item" href="#">Seguro soy previsión exequial</a>
@@ -182,7 +182,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Giros internacionales </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Giros/reclamarGiro.html">Reclamar giros</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/Giros/reclamarGiro.html">Reclamar giros</a>
                             <a class="dropdown-item" href="#">Enviar Giros</a>
                             
                         </div>
@@ -191,10 +191,10 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
                         aria-expanded="false"> Comunidad W </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="ComunidadW/comunidadW.html">W contigo</a>
-                            <a class="dropdown-item" href="ComunidadW/Premios-Invencibles/premios.html">Premios invencibles W</a>
-                            <a class="dropdown-item" href="ComunidadW/Refiere/refiere.html">Refiere y gana</a>
-                            <a class="dropdown-item" href="clasificados/clasificados.html">Clasificados</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/ComunidadW/comunidadW.html">W contigo</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/ComunidadW/Premios-Invencibles/premios.html">Premios invencibles W</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/ComunidadW/Refiere/refiere.html">Refiere y gana</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/clasificados/clasificados.html">Clasificados</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown ">
@@ -238,9 +238,9 @@ class NavBar extends HTMLElement {
       const sesionActiva = sessionStorage.getItem('sesionActiva');
   
       if (sesionActiva === 'true') {
-        perfilLink.href = 'Perfil/perfil.html';
+        perfilLink.href = '/Pag-Banco-W/Perfil/perfil.html';
       } else {
-        perfilLink.href = 'Registro/iniciarSesión.html';
+        perfilLink.href = '/Pag-Banco-W/Registro/iniciarSesión.html';
       }
     }
   
