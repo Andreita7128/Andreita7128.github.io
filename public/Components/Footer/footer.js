@@ -10,7 +10,7 @@ class Footer extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="/public/Components/Footer/footer.css">
+        <link rel="stylesheet" href="public/Components/Footer/footer.css">
         <footer class="footerW border-0">
         <div class="container">
           <div class="row">
@@ -38,7 +38,7 @@ class Footer extends HTMLElement {
               <hr class= separadortitulo>
 
               <ul class="list-unstyled">
-                <li><a href="../../../Creditos/credito.html" class="text-white">Microcrédito</a></li>
+                <li><a href="Creditos/credito.html" class="text-white">Microcrédito</a></li>
                 </ul>
                 <ul class="list-unstyled">
                 <li><a href="#" class="text-white">Libranza</a></li>
