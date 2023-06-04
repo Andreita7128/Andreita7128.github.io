@@ -73,7 +73,7 @@ rellenar un formulario que encontraras
 bajando un poco en la pagina.</p>
 
 
-<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/form 1.png" alt=""></section></section> -->
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="salvavidas/recursos/imagenes/form 1.png" alt=""></section></section> -->
 
 </section>`
 
@@ -130,13 +130,19 @@ bajando un poco en la pagina.</p>
 
         if (sessionStorage.getItem("etapa") === "main") {
             this.innerHTML = `
+
+            <link rel="stylesheet" href="salvavidas.css">
+
+            <script type="module" src=".ComponenteSalvavidas.js"></script>
+            <link rel="stylesheet" href="landing.css">
+
         <section class="contenedor">
         <input type="checkbox" name="" id="btn-plus" >
         <section id="content-in-help">
         ${this.home}
         </section>
         <div class="btn-more">
-            <label for="btn-plus" class="salvavidas-logo"><img id="salvalogo" src="/Salvavidas/recursos/BotonSalvavidas Final (1).gif" width="80"
+            <label for="btn-plus" class="salvavidas-logo"><img id="salvalogo" src="Salvavidas/recursos/BotonSalvavidas Final (1).gif" width="80"
                     alt="Boton salvavidas"></label>
         </div>
     </section>
@@ -162,7 +168,7 @@ bajando un poco en la pagina.</p>
         ${this.micro}
         </section>
         <div class="btn-more">
-            <label for="btn-plus" class="salvavidas-logo"><img id="salvalogo" src="/Salvavidas/recursos/BotonSalvavidas Final (1).gif" width="80"
+            <label for="btn-plus" class="salvavidas-logo"><img id="salvalogo" src="Salvavidas/recursos/BotonSalvavidas Final (1).gif" width="80"
                     alt="Boton salvavidas"></label>
         </div>
     </section>
@@ -218,9 +224,9 @@ function changeToMicro() {
 
     sessionStorage.setItem("active", true)
 
-    if (window.location.href != "http://127.0.0.1:5500/Creditos/credito.html") {
+    if (window.location.href != "Creditos/credito.html") {
 
-        window.location.href = "/Creditos/credito.html"
+        window.location.href = "Creditos/credito.html"
     } else {
         document.getElementById("content-in-help").innerHTML = `
 
@@ -240,7 +246,7 @@ más pronto posible.</p>
     bajando un poco en la pagina.</p>
 
 
-<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/form 1.png" alt=""></section></section> -->
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="salvavidas/recursos/imagenes/form 1.png" alt=""></section></section> -->
 
 </section>
     `;
@@ -393,7 +399,7 @@ function conversacion() {
 <!-- Pregunta -->
 <section class="pregunta-chat">
     <div class="comment pregunta">
-        <img class="profile-pic" src="/Salvavidas/recursos/imagenes/Icono-pregunta.png">
+        <img class="profile-pic" src="Salvavidas/recursos/imagenes/Icono-pregunta.png">
         <div class="comment-body">
             <div class="comment-message">Como crear un perfil
             </div>
@@ -404,9 +410,9 @@ function conversacion() {
 <!-- Respuesta -->
 <section class="respuesta-chat">
     <div class="comment respuesta">
-        <img class="banco-pic" src="/Salvavidas/recursos/imagenes/Icono-respuesta.png">
+        <img class="banco-pic" src="Salvavidas/recursos/imagenes/Icono-respuesta.png">
         <div class="comment-body">
-            <div class="comment-message">Para crear un perfil, tendrás que dirigirte a <a href=".././Registro/registro.html">Mi perfil aquí.</a> <br><br>
+            <div class="comment-message">Para crear un perfil, tendrás que dirigirte a <a href="Registro/registro.html">Mi perfil aquí.</a> <br><br>
                 Te proporcionare también algunas opciones que podran ayudarte. <br><br>
                 Si tienes mas dudas continua escribiendo.
             </div>
