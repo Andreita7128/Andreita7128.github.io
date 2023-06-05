@@ -20,7 +20,7 @@ class Sidebar extends HTMLElement {
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="side-item">
 
-                        <a href="/Perfil/perfil.html" class="nav-link side-link ${route === 'perfil' ? 'active' : ''} " >
+                        <a href="../../../Perfil/perfil.html" class="nav-link side-link ${route === 'perfil' ? 'active' : ''} " >
                         <i class="bi bi-person"></i>
                         <span>Perfil</span>
 
@@ -28,21 +28,21 @@ class Sidebar extends HTMLElement {
                     </li>
                     
                     <li class="side-item">
-                        <a href="/Perfil/productos.html" class="side-link nav-link link-body-emphasis ${route === 'productos' ? 'active' : ''}">
+                        <a href="../../../Perfil/productos.html" class="side-link nav-link link-body-emphasis ${route === 'productos' ? 'active' : ''}">
                         <i class="bi bi-wallet2"></i>
                         <span>Tus Productos</span>
                         </a>
                     </li>
 
                     <li class="side-item">
-                        <a href="/Perfil/gamificacion/gamificacion.html" class="side-link nav-link link-body-emphasis ${route === 'mis logros' ? 'active' : ''}">
+                        <a href="../../../Perfil/gamificacion/gamificacion.html" class="side-link nav-link link-body-emphasis ${route === 'mis logros' ? 'active' : ''}">
                         <i class="bi bi-wallet2"></i>
                         <span>Mis logros</span>
                         </a>
                     </li>
 
                     <li class="side-item">
-                        <a href="/Perfil/giros.html" class="side-link nav-link link-body-emphasis ${route === 'giros' ? 'active' : ''}">
+                        <a href="../../../Perfil/giros.html" class="side-link nav-link link-body-emphasis ${route === 'giros' ? 'active' : ''}">
                         <i class="bi bi-send"></i>
                         <span>Giros Internacionales</span>
                         </a>
@@ -50,7 +50,7 @@ class Sidebar extends HTMLElement {
 
                     <li class="side-item">
 
-                        <a href="/Perfil/alcancias.html" class="side-link nav-link link-body-emphasis ${route === 'alcancias' ? 'active' : ''}">
+                        <a href="../../../Perfil/alcancias.html" class="side-link nav-link link-body-emphasis ${route === 'alcancias' ? 'active' : ''}">
                         <i class="bi bi-piggy-bank"></i>
                         <span>Alcancias</span>
 
@@ -58,14 +58,14 @@ class Sidebar extends HTMLElement {
                     </li>
 
                     <li class="side-item">
-                        <a href="/Perfil/agenda.html" class="side-link nav-link link-body-emphasis ${route === 'agenda' ? 'active' : ''}">
+                        <a href="../../../Perfil/agenda.html" class="side-link nav-link link-body-emphasis ${route === 'agenda' ? 'active' : ''}">
                         <i class="bi bi-calendar-week"></i>
                         <span>Agenda Financiera</span>
                         </a>
                     </li>
 
                     <li class="side-item">
-                        <a href="/Perfil/extractos.html" class="side-link nav-link link-body-emphasis ${route === 'extractos' ? 'active' : ''}">
+                        <a href=../../../Perfil/extractos.html" class="side-link nav-link link-body-emphasis ${route === 'extractos' ? 'active' : ''}">
                         <i class="bi bi-file-earmark-text"></i>
                         <span>Extractos y Certificados</span>
                         </a>
