@@ -172,7 +172,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Seguros </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Pag-Banco-W/seguros/soy-vida.html">Seguro soy vida</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/Seguros/soy-vida.html">Seguro soy vida</a>
                             <a class="dropdown-item" href="#">Seguro soy protección familiar</a>
                             <a class="dropdown-item" href="#">Seguro soy patrimonio seguro</a>
                             <a class="dropdown-item" href="#">Seguro soy previsión exequial</a>
@@ -192,7 +192,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
                         aria-expanded="false"> Comunidad W </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Pag-Banco-W/ComunidadW/comunidadW.html">W contigo</a>
+                            <a class="dropdown-item" href="/Pag-Banco-W/ComunidadW/comunidadw.html">W contigo</a>
                             <a class="dropdown-item" href="/Pag-Banco-W/ComunidadW/Premios-Invencibles/premios.html">Premios invencibles W</a>
                             <a class="dropdown-item" href="/Pag-Banco-W/ComunidadW/Refiere/refiere.html">Refiere y gana</a>
                             <a class="dropdown-item" href="/Pag-Banco-W/clasificados/clasificados.html">Clasificados</a>
