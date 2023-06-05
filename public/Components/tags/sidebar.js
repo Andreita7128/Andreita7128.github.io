@@ -35,7 +35,7 @@ class Sidebar extends HTMLElement {
                     </li>
 
                     <li class="side-item">
-                        <a href="/Pag-Banco-W/Perfil/gamificacion.html" class="side-link nav-link link-body-emphasis ${route === 'mis logros' ? 'active' : ''}">
+                        <a href="/Pag-Banco-W/Perfil/gamificacion/gamificacion.html" class="side-link nav-link link-body-emphasis ${route === 'mis logros' ? 'active' : ''}">
                         <i class="bi bi-wallet2"></i>
                         <span>Mis logros</span>
                         </a>
