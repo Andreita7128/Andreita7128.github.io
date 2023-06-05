@@ -61,7 +61,7 @@ class CardDesk extends HTMLElement {
 
     render() {
         this.innerHTML = `
-    <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
+    <link rel="stylesheet" href="/Pag-Banco-W/public/Components/Cards/cardArticle.css">
     <article class="card_horizontal_container">
             <img class="card_horizontal_img" src="${this.photo}" alt="">
             <section class="card_horizontal_body">
