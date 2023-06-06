@@ -1957,10 +1957,10 @@ class Simulador extends HTMLElement {
 
                       <h5 class = "simulacion body_2" style = "margin-top: 3%;">Tasa de simulación 2.02% M.V</h5>
          
-                  <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn_large_active siguiente" style = "margin-top: 5%; margin-bottom: 5%; margin-left:40%;">Continuar <i class="bi bi-arrow-right float-end"></i></button>
-                  </div>
-                </div>
+                      <div class="col-md-12 d-flex justify-content-center my-3">
+                      <button type="button" class="btn btn_large_active siguiente btn-block" style="width: 50%;">Calcular <i class="bi bi-arrow-right float-end"></i></button>
+                    </div>
+                    
             
 
   
@@ -2781,8 +2781,8 @@ class SimuladorCDT extends HTMLElement {
 
                       <h3 class = "simulacion" style = "margin-bottom:20px;">Tasa de simulación 4%</h3>
          
-                  <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn_large_active siguiente">Continuar <i class="bi bi-arrow-right float-end"></i></button>
+                  <div class="col-md-12 d-flex justify-content-center my-3">
+                    <button type="button" class="btn btn_large_active siguiente" style="width: 50%;">Continuar <i class="bi bi-arrow-right float-end"></i></button>
                   </div>
                 </div>
             
