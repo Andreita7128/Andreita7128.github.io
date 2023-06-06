@@ -777,6 +777,7 @@ h5 {
 .second_nav_link li a {
   color: #F25C05;
   padding-left: 0% !important;
+  
 }
 .second_nav_link li a:hover {
   color: #27262C !important;
@@ -839,6 +840,17 @@ h5 {
     margin-top: 0px;
   }
   .second_nav_link {
-    gap: 5px;
+    gap: 9px;
   }
+  .second_nav .dropdown-toggle::after {
+    content: "";
+    border: solid;
+    border-width: 0.25em 0.25em 0 0;
+    display: inline-block;
+    padding: 0.25em;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 5px;
+  }
+  
 }/*# sourceMappingURL=navBar.css.map */
