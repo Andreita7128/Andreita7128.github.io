@@ -45,7 +45,7 @@ class BtnInsideBtn extends HTMLElement {
 
     render() {
         this.innerHTML = `
-    <link rel="stylesheet" href="../../../public/Components/Btn-Btn/btn.css">
+    <link rel="stylesheet" href="/Pag-Banco-W/public/Components/Btn-Btn/btn.css">
     <div class="container_btn">
         <h5>${this.title}</h5>
         <a href="${this.link}">
