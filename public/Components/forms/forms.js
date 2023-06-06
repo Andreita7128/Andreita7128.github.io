@@ -102,9 +102,10 @@ class Forms extends HTMLElement {
                   <label for="apellido"><h5 class = "body_2">Apellido*</h5></label>
                   <input type="text" class="form-control form-control_formulario form-input" id="apellido" placeholder="Escribe tu apellido aquí" style = " border-radius: 20px !important;">
                 </div>
-                <div class="col-md-12 text-center">
-                  <button type="button" class="btn btn_medium_active siguiente" style = "margin-top: 5%; margin-bottom: 5%; margin-left:40%;">Continuar <i class="bi bi-arrow-right float-end"></i></button>
-                </div>
+                <div class="col-md-12 d-flex justify-content-center my-3">
+                <button type="button" class="btn btn_medium_active siguiente">Continuar <i class="bi bi-arrow-right float-end"></i></button>
+              </div>
+              
               </div>
 
 
